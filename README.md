@@ -11,20 +11,35 @@ Breve recopilación de scripts y utilidades para experimentar con mecanismos de 
 - **Paquetes recomendados:** `psycopg2-binary` (si usa PostgreSQL), `cryptography` o librerías de cifrado que el proyecto utilice. Instalar con `pip` según sea necesario.
 
 **Instalación rápida**
+# Sistema Seguro de Transacciones Financieras
+
+<p align="center"><strong>Herramientas para simular y probar seguridad en transacciones financieras</strong></p>
+
+Breve recopilación de scripts y utilidades para experimentar con mecanismos de seguridad en transacciones financieras simuladas (cliente/servidor, DB, pruebas de ataque como MITM y replay). Este repositorio contiene código de ejemplo destinado a investigación y pruebas en entornos controlados.
+
+## Resumen
+- **Propósito:** Proveer herramientas para simular, analizar y probar protocolos/implementaciones de transacciones seguras (cliente, servidor, cifrado, DB y ataques controlados).
+- **Ámbito:** Código de apoyo para pruebas locales y educativas. No usar en entornos de producción sin auditoría y adaptación.
+
+## Requisitos
+- **Python:** `3.8+`.
+- **Paquetes recomendados:** `psycopg2-binary` (si usa PostgreSQL), `cryptography` u otras librerías que el proyecto requiera.
+
+## Instalación rápida
 - Crear un entorno virtual (opcional):
   ```powershell
   python -m venv .venv; .\.venv\Scripts\Activate.ps1
   ```
-- Instalar dependencias (si crea `requirements.txt`):
+- Instalar dependencias (si existe `requirements.txt`):
   ```powershell
   pip install -r requirements.txt
   ```
-- Si no hay `requirements.txt`, instalar los paquetes que necesite, por ejemplo:
+- Ejemplo (si no hay `requirements.txt`):
   ```powershell
   pip install psycopg2-binary cryptography
   ```
 
-**Uso básico**
+## Uso básico
 - Iniciar el servidor (escuchar transacciones):
   ```powershell
   python python\serversocket.py
@@ -40,15 +55,16 @@ Breve recopilación de scripts y utilidades para experimentar con mecanismos de 
   python python\replay.py               # ensayo de replay attacks
   ```
 
-**Configuración de base de datos**
+## Configuración de base de datos
 - Los comandos y ejemplos relacionados con PostgreSQL se encuentran en `comandos_postgres.txt` y en `python/postgresql_functions.py`.
 - Cree la base de datos y tablas necesarias siguiendo `comandos_postgres.txt` o adaptando las funciones del archivo `postgresql_functions.py`.
 
-**Estructura del proyecto**
+## Estructura del proyecto
 ```
 clientesocket_transaccion.txt
 comandos_postgres.txt
 README.md
+Sistema-Seguro-Transacciones-Financieras.pdf
 python/
     clientsocket.py
     clientsocket_atack.py
@@ -62,7 +78,7 @@ python/
     time_functions.py
 ```
 
-**Descripción de archivos principales**
+## Descripción de archivos principales
 - `python/clientsocket.py`: Cliente que simula envío de transacciones al servidor.
 - `python/clientsocket_atack.py`: Cliente malicioso para pruebas (simula ataques).
 - `python/serversocket.py`: Servidor que recibe y procesa transacciones.
@@ -76,18 +92,18 @@ python/
 - `clientesocket_transaccion.txt`: Ejemplos de transacciones que puede enviar el cliente.
 - `comandos_postgres.txt`: Comandos de ejemplo para crear DB/tablas y usuarios en PostgreSQL.
 
-**Buenas prácticas y advertencias**
+## Buenas prácticas y advertencias
 - Use este código sólo en entornos de laboratorio o desarrollo. No emplee scripts de ataque (`clientsocket_atack.py`, `mitm.py`, `replay.py`) contra sistemas reales sin autorización.
 - Verifique y ajuste configuraciones de red y base de datos antes de ejecutar.
 
-**Cómo contribuir**
+## Cómo contribuir
 - Haga forks y pull requests para mejorar documentación, añadir `requirements.txt` o facilitar la configuración.
 - Abra issues para reportar errores o proponer mejoras.
 
-**Licencia**
+## Licencia
 - (Pendiente) Añada una licencia apropiada en el repositorio cuando decida la política de uso.
 
-**Contacto**
+## Contacto
 - Autor/Contacto: `Josesolis01` (repositorio: `Sistema-Seguro-Transacciones-Financieras`).
 
 Si quieres, puedo:
