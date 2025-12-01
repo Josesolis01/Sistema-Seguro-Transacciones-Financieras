@@ -1,4 +1,4 @@
-#Sistema Seguro de Transacciones Financieras
+# Sistema Seguro de Transacciones Financieras
 
 Breve recopilación de scripts y utilidades para experimentar con mecanismos de seguridad en transacciones financieras simuladas (cliente/servidor, DB, pruebas de ataque como MITM y replay). Este repositorio contiene código de ejemplo destinado a investigación y pruebas en entornos controlados.
 
