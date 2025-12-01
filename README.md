@@ -1,18 +1,5 @@
 # Sistema Seguro de Transacciones Financieras
 
-Breve recopilación de scripts y utilidades para experimentar con mecanismos de seguridad en transacciones financieras simuladas (cliente/servidor, DB, pruebas de ataque como MITM y replay). Este repositorio contiene código de ejemplo destinado a investigación y pruebas en entornos controlados.
-
-**Resumen**
-- **Propósito:** Proveer herramientas para simular, analizar y probar protocolos/implementaciones de transacciones seguras (cliente, servidor, cifrado, DB y ataques controlados).
-- **Ámbito:** Código de apoyo para pruebas locales y educativas. No usar en entornos de producción sin auditoría y adaptación.
-
-**Requisitos**
-- **Python:** `3.8+`.
-- **Paquetes recomendados:** `psycopg2-binary` (si usa PostgreSQL), `cryptography` o librerías de cifrado que el proyecto utilice. Instalar con `pip` según sea necesario.
-
-**Instalación rápida**
-# Sistema Seguro de Transacciones Financieras
-
 <p align="center"><strong>Herramientas para simular y probar seguridad en transacciones financieras</strong></p>
 
 Breve recopilación de scripts y utilidades para experimentar con mecanismos de seguridad en transacciones financieras simuladas (cliente/servidor, DB, pruebas de ataque como MITM y replay). Este repositorio contiene código de ejemplo destinado a investigación y pruebas en entornos controlados.
